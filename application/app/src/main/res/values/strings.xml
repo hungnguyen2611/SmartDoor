@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">smartdoor_app</string>
+    <string name="no_acc">Not have account? <b>SignUp</b></string>
+    <string name="have_acc">Already have an account? <b>SignIn</b></string>
+    <string name="username"><b>UserName:</b></string>
+    <string name="email"><b>Email:</b></string>
+    <string name="role"><b>Role:</b></string>
+    <string name="full_name"><b>Full Name:</b></string>
+    <string name="admin"><b>Admin:</b></string>
+    <string name="password"><b>Password:</b></string>
+    <string name="change_avatar"><b>Change avatar</b></string>
+</resources>

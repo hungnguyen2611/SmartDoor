@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ProfileView"
+    android:background="@drawable/background2">
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="100dp"
+        android:text="You're logged in as "
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/emailTv"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Email" />
+
+    <TextView
+        android:id = "@+id/ProfileTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text = "Profile "
+        android:textSize="30sp"
+        style="@style/TextAppearance.AppCompat.Body1" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="110dp"
+        android:gravity="center"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/usernameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/username"
+
+        />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="275dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="name"
+
+        />
+
+    <TextView
+        android:id="@+id/EmailTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/email"
+
+        />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="email"
+
+        />
+
+    <TextView
+        android:id="@+id/fullnametv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/full_name"
+
+        />
+
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="410dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="FullName"
+
+        />
+
+    <TextView
+        android:id="@+id/roletv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/role"
+
+        />
+
+    <TextView
+        android:id="@+id/role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="role"
+
+        />
+
+    <TextView
+        android:id="@+id/admintv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/admin"
+
+        />
+
+    <TextView
+        android:id="@+id/admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="545dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="admin"
+
+        />
+
+    <Button
+        android:id="@+id/HomeBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="585dp"
+        android:backgroundTint="#65849E"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:text="Home" />
+
+    <Button
+        android:id="@+id/editBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="585dp"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#65849E"
+        android:gravity="center"
+        android:text="Edit" />
+
+
+</RelativeLayout>

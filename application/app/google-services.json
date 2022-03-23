@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1011022278377",
+    "firebase_url": "https://mp212-ai-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "mp212-ai",
+    "storage_bucket": "mp212-ai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011022278377:android:971bb1a14b6c22b5d0ca78",
+        "android_client_info": {
+          "package_name": "com.example.smartdoor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011022278377-3sgmddoo9t23alcjjnp71v9dpigupsu5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH7152QYUC3Co2ZGzqY_UxDyupfqqvVic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011022278377-3sgmddoo9t23alcjjnp71v9dpigupsu5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011022278377:android:47f680c39341ddb4d0ca78",
+        "android_client_info": {
+          "package_name": "com.example.smartdoor_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011022278377-3sgmddoo9t23alcjjnp71v9dpigupsu5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH7152QYUC3Co2ZGzqY_UxDyupfqqvVic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011022278377-3sgmddoo9t23alcjjnp71v9dpigupsu5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

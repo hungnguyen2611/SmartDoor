@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".EditActivity"
+    android:background="@drawable/background2">
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="100dp"
+        android:text="You're logged in as "
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/emailTv"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Email" />
+
+    <TextView
+        android:id = "@+id/ProfileTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text = "Edit Profile "
+        android:textSize="30sp"
+        style="@style/TextAppearance.AppCompat.Body1" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="110dp"
+        android:gravity="center"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/uploadTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:backgroundTint="#65849E"
+        android:gravity="center"
+        android:textSize="15sp"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:text="@string/change_avatar" />
+
+    <TextView
+        android:id="@+id/usernameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/username"
+
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id = "@+id/username"
+        android:layout_below="@+id/usernameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New user name"
+            android:drawableStart="@drawable/ic_baseline_info_24"
+            android:drawablePadding="10dp"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/fullnametv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/full_name"
+
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id = "@+id/fullname"
+        android:layout_below="@+id/fullnametv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New full name"
+            android:drawableStart="@drawable/ic_baseline_info_24"
+            android:drawablePadding="10dp"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/passtv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/password"
+
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id = "@+id/pass"
+        android:layout_below="@+id/passtv"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New password"
+            android:drawableStart="@drawable/ic_baseline_info_24"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/BackBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="585dp"
+        android:backgroundTint="#65849E"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/savechangeBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="585dp"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#65849E"
+        android:gravity="center"
+        android:text="Save changes" />
+
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/background2">
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#15A5E6"
+        android:gravity="start"
+        android:text="Back" />
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="100dp"
+        android:text="You're logged in as "
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/emailTv"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Email" />
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/record_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        tools:listitem="@layout/activity_user_item"/>
+
+
+
+
+</RelativeLayout>

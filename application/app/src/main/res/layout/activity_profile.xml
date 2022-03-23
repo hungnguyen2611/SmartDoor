@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/background2">
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="100dp"
+        android:text="You're logged in as "
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/emailTv"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Email" />
+
+    <TextView
+        android:id = "@+id/welcomeTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text = "Welcome "
+        android:textSize="30sp"
+        style="@style/TextAppearance.AppCompat.Body1" />
+
+    <Button
+        android:id="@+id/profileBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:backgroundTint="#673AB7"
+        android:text="Profile"
+
+        />
+
+    <Button
+        android:id="@+id/historyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileBtn"
+        android:padding="15dp"
+        android:gravity="center"
+        android:backgroundTint="#673AB7"
+        android:text="History"
+
+        />
+
+    <Button
+        android:id="@+id/memberlistBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/historyBtn"
+        android:padding="15dp"
+        android:gravity="center"
+        android:backgroundTint="#673AB7"
+        android:text="Member list"
+
+        />
+
+    <Button
+        android:id="@+id/sosBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/memberlistBtn"
+        android:padding="15dp"
+        android:gravity="center"
+        android:backgroundTint="#673AB7"
+        android:text="Éc O Éc"
+
+        />
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:backgroundTint="#DA1608"
+        android:gravity="center"
+        android:text="Logout" />
+
+
+
+
+</RelativeLayout>
