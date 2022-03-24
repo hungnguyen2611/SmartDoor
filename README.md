@@ -76,10 +76,10 @@ python main.py
 
 ## Mock-up
 ### Authentication
-![Alt Text](https://firebasestorage.googleapis.com/v0/b/mp212-ai.appspot.com/o/camera_capture%2Fauthentication.gif?alt=media&token=834f62e2-b91a-4148-845a-944680083b2d)
+![Alt Text](https://firebasestorage.googleapis.com/v0/b/mp212-ai.appspot.com/o/camera_capture%2Fauthentication.gif?alt=media&token=8112af09-defe-42e6-aa74-20fb8ae78cbf)
 
 ### Profile management, check history, modify member
-![Alt Text](https://firebasestorage.googleapis.com/v0/b/mp212-ai.appspot.com/o/camera_capture%2Fotherfeatures.gif?alt=media&token=84eae67e-8c4c-4356-aef5-98d926754b3c)
+![Alt Text](https://firebasestorage.googleapis.com/v0/b/mp212-ai.appspot.com/o/camera_capture%2Fotherfeatures.gif?alt=media&token=3180b4c9-9c96-43bb-8a01-279c94b27bf1)
 
 ## Challenges
 * Lacking of cloud server to maintain the python code, I have to run the Python script on local host.
