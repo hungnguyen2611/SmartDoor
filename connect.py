@@ -1,14 +1,11 @@
-from Adafruit_IO import Client,Data
 import cv2
 import sys
-import time
-from device import readSerial
 
 from PIL import Image
 
 
 AIO_USERNAME = "hungak01"
-AIO_KEY = "aio_Nrsd87hRDxU3HWNPQzvuQLQaDNxt"
+AIO_KEY = "aio_wIrk25zGfxDqv2fGvADefh4fd6HD"
 
 
 fr_button = "fr-button"
@@ -49,7 +46,7 @@ def take_photo():
     cam = cv2.VideoCapture(0)
 
     x = 0
-    while x < 30:
+    while x < 10:
         ret, frame = cam.read()
         x += 1
     if not ret:
