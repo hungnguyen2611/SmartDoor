@@ -1,6 +1,6 @@
 import serial.tools.list_ports
 import  sys
-from  Adafruit_IO import  MQTTClient
+# from  Adafruit_IO import  MQTTClient
 
 AIO_FEED_ID = "fr-button"
 AIO_USERNAME = "hungak01"
@@ -21,13 +21,13 @@ def  message(client , feed_id , payload):
     print("Nhan du lieu: " + payload)
     ser.write((str(payload) + "#").encode())
 
-client = MQTTClient(AIO_USERNAME , AIO_KEY)
-client.on_connect = connected
-client.on_disconnect = disconnected
-client.on_message = message
-client.on_subscribe = subscribe
-client.connect()
-client.loop_background()
+# client = MQTTClient(AIO_USERNAME , AIO_KEY)
+# client.on_connect = connected
+# client.on_disconnect = disconnected
+# client.on_message = message
+# client.on_subscribe = subscribe
+# client.connect()
+# client.loop_background()
 
 def getPort():
     ports = serial.tools.list_ports.comports()
@@ -49,26 +49,23 @@ def processData(data):
     data = data.replace("#", "")
     splitData = data.split(":")
     print(splitData)
-    if splitData[0] == "BUTTON1":
-        if splitData[1] == "true":
-            client.publish("fr-button", 1)
     if splitData[0] == "BUTTON2":
-        if splitData[1] == "true":
-            client.publish("fr-button2", 1)
+        if splitData[1] == "1":
+            return True
+        else:
+            return False
+    return False
 
-mess = ""
 def readSerial():
     bytesToRead = ser.inWaiting()
+    ret = False
     if (bytesToRead > 0):
-        global mess
-        mess = mess + ser.read(bytesToRead).decode("UTF-8")
-        while ("#" in mess) and ("!" in mess):
+        mess = ser.read(bytesToRead).decode("UTF-8")
+        if ("#" in mess) and ("!" in mess):
             start = mess.find("!")
             end = mess.find("#")
-            processData(mess[start:end + 1])
-            if (end == len(mess)):
-                mess = ""
-            else:
-                mess = mess[end+1:]
-
+            ret = processData(mess[start:end + 1])
+    return ret
+def writeSerial(str):
+    ser.write((str+"#").encode())
 
