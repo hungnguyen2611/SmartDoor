@@ -54,7 +54,7 @@ The figure above showed the work flow of the IoT+AI application:
 | SVM     | Training Accuracy | Validation Accuracy
 |---------|-------------------| ------------------
 | 3 users | 100%              | 100%
-| 5 users |                   |
+| 5 users | 97.62%            | 100%
 
 ## How It's used?
 * Connect Microbit with your laptop, specify your serial port name before running the code, for more instruction follow [here](https://firebasestorage.googleapis.com/v0/b/mp212-ai.appspot.com/o/camera_capture%2FSerial%20Simulation_en_v0.docx.pdf?alt=media&token=058d0480-42ef-49a1-b29c-cb26f804a784). Now, your laptop's currently a gateway to communicate between microbit and python code.
