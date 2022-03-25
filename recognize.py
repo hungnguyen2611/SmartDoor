@@ -106,7 +106,7 @@ def predict(img_path, svm_model, facenet_model):
     class_index = yhat_class[0]
     class_probability = yhat_prob[0, class_index] * 100
 
-    if class_probability < 85:
+    if class_probability < 65:
         screen = "Stranger detected!"
         print(screen)
         return screen,"Stranger",class_probability
