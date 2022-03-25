@@ -1,5 +1,3 @@
-import time
-
 from recognize import *
 from connect import *
 from Adafruit_IO import Client, Data, MQTTClient
@@ -30,6 +28,7 @@ def connect():
     writeSerial("Touch the button")
     while True:
         ret = readSerial()
+        ret = True
         img_val = None
         if ret:
             # client.publish(fr_button2, 1)
@@ -73,6 +72,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-    # # In case you want to train the svm model again #
+    # #In case you want to train the svm model again #
     # facenet_model = load_model('model/facenet_keras.h5')
     # svm_model = train_svm_model(facenet_model)
