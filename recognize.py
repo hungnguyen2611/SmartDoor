@@ -106,8 +106,9 @@ def predict(img_path, svm_model, facenet_model):
     # get name
     class_index = yhat_class[0]
     class_probability = yhat_prob[0, class_index] * 100
+
     if class_probability < 85:
-        screen = "Stranger detected, get out of this house !"
+        screen = "Stranger detected!"
         print(screen)
         return screen,"Stranger",class_probability
     out_encoder = LabelEncoder()
@@ -117,8 +118,9 @@ def predict(img_path, svm_model, facenet_model):
         y += [subdir]
     out_encoder.fit(asarray(y))
     predict_names = out_encoder.inverse_transform(yhat_class)
-    screen = 'Hello '+ predict_names[0] + ', Welcome home :> '
+    screen = 'Hello '+ predict_names[0]
     print(screen)
+    print(predict_names[0], class_probability)
     return screen, predict_names[0], class_probability
 
 
