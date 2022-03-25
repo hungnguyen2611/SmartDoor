@@ -46,7 +46,7 @@ def take_photo():
     cam = cv2.VideoCapture(0)
 
     x = 0
-    while x < 10:
+    while x < 30:
         ret, frame = cam.read()
         x += 1
     if not ret:
